@@ -13,5 +13,5 @@ func BenchmarkChannelReader(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		result = ChannelReader("pokemon.csv")
 	}
-	fmt.Println(result)
+	fmt.Printf("grep line: %v\n", result)
 }
