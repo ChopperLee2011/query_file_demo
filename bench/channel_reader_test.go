@@ -8,7 +8,7 @@ import (
 )
 
 func BenchmarkChannelReader(b *testing.B) {
-	var result string
+	var result []string
 	b.StartTimer()
 	for i := 0; i < b.N; i++ {
 		result = ChannelReader("pokemon.csv")

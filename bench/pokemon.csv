@@ -77,7 +77,10 @@ id,identifier,species_id,height,weight,base_experience,order,is_default
 76,golem,76,14,3000,223,95,1
 77,ponyta,77,10,300,82,96,1
 78,rapidash,78,17,950,175,97,1
-79,slowpoke,79,12,360,63,98,1
+79-0,slowpoke,79,12,360,63,98,1
+79-1,slowpoke,79,12,360,63,98,1
+79-2,slowpoke,79,12,360,63,98,1
+79-3,slowpoke,79,12,360,63,98,1
 80,slowbro,80,16,785,172,99,1
 81,magnemite,81,3,60,65,102,1
 82,magneton,82,10,600,163,103,1

@@ -6,18 +6,18 @@ import (
 	"regexp"
 )
 
-func Scanner(path string) string {
+func Scanner(path string) []string {
 	f, err := os.Open(path)
 	CheckError(err)
 	defer f.Close()
 
-	var result string
+	var result []string
 	scanner := bufio.NewScanner(f)
 	re := regexp.MustCompile(`\bslowpoke\b`)
 	for scanner.Scan() {
 		s := scanner.Text()
 		if re.MatchString(s) {
-			result = s
+			result = append(result, s)
 		}
 	}
 	return result
